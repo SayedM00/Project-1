@@ -13,27 +13,27 @@ body {
 }
 /* End Main Rules */
 /* Start Card */
-.card {
+header {
     width:450px;
     height:80vh;
     background-color:white;
     border-radius:20px
 }
 @media (max-width:375px) {
-    .card {
+    header {
         width:350px
     }
 }
-.card .image img {
+header .image img {
     border-radius:20px 20px 0 0;
     max-width: 100%;
 }
-.card .heading {
+header .heading {
     font-size: 29px;
     width: fit-content;
     margin: 30px auto 0;
 }
-.card p{
+header p{
     font-size: 16px;
     width: 300px;
     margin: 20px auto;
@@ -42,14 +42,14 @@ body {
     color: hsl(224, 23%, 55%)
 }
 @media (max-width:375px) {
-    .card .heading {
+    header .heading {
         font-size: 25px;
     }
-    .card p {
+    header p {
         width: 270px;
     }
 }
-.card .subscription {
+header .subscription {
     padding: 20px;
     background-color: hsl(225, 100%, 98%);
     width: 350px;
@@ -59,49 +59,52 @@ body {
     border-radius: 20px;
     align-items: center;
 }
-.card .subscription .logo {
+header .subscription .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.card .subscription .logo img{
+header .subscription .logo img{
     width:50px;
     height: 50px;
     margin-right: 20px;
     
 }
-.card .subscription .logo .price {
+header .subscription .logo .price {
     display: flex;
     align-content: center;  
     flex-wrap: wrap;
 }
-.card .subscription .logo h3 {
+header .subscription .logo h2 {
     margin: 0;
+    font-size: 18px;
+    font-weight: bold;
 }
-.card .subscription .logo p{
+header .subscription .logo p{
     width:fit-content;
-    flex-basis: 50%;
+    flex-basis: 51%;
     margin: 0 0 0 -3px;
+    
 }
 @media (max-width:375px) {
-    .card .subscription{
+    header .subscription{
         width: 270px;
     }
-    .card .subscription .logo {
+    header .subscription .logo {
         justify-content: stretch;
         align-items: stretch;
         flex-wrap: nowrap;
     }
-    .card .subscription .logo img{
+    header .subscription .logo img{
         margin-right: 20px;
     }
 }
-.card .subscription a {
+header .subscription a {
     font-size: 15px;
     color:hsl(245, 75%, 52%)
 }
-.card .button {
+header .button {
     width: 350px;
     margin: 30px auto;
     text-align: center;
@@ -113,11 +116,11 @@ body {
     cursor: pointer;
 }
 @media (max-width:375px) {
-    .card .button {
+    header .button {
         width: 250px;
     }
 }
-.card .cansel {
+header .cansel {
     width: fit-content;
     margin: 30px auto;
     color: hsl(224, 23%, 55%);
